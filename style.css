@@ -1,0 +1,38 @@
+html, body {
+	height: 100%;
+	
+	margin: 0;
+	
+	background-color: lightblue;
+}
+a {
+	display: block;
+}
+
+.button {
+	height: 50px;
+	width: 100px;
+	margin: auto;
+	background-color: navy;
+
+}
+
+#About {
+	height: 100%;
+	background-color: white;
+}
+
+#Footer {
+	height: 300px;
+	
+	background-color: lightblue;
+}
+
+#Footer div {
+	
+	text-align: center;
+	
+}
+
+
+
