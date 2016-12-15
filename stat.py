@@ -4,3 +4,4 @@ import cgi, cgitb
 cgitb.enable()
 inp = cgi.FieldStorage()
 
+print("Hello World");

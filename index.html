@@ -21,33 +21,71 @@
 			Welcome!
 		</div>
 		<div id = "Formulas">
+			<!perhaps change names of forms?>
 			<h1> Bayes' Theorem </h1>
-			<P>
-				Let A and B be events. Then P(A|B) = P(B|A)P(A)/P(B)
-			</P>
+				Let A and B be events, where the probability of neither of the events are equal to zero.
+				Then P(A|B) = P(B|A)P(A)/P(B)
+			<form method = "POST" action = "stat.py">
+				Enter at least 2 of the following:
+				<br>
+				P(B|A): <input type = "text" name = "bayesPBA"> 
+				<br>
+				P(A): <input type = "text" name = "bayesPA">
+				<br>
+				P(B): <input type = "text" name = "bayesPB">
+				<br>
+				<input type = "submit" name = "bayes" value = "Calculate">
+			</form>
+
+			<h1> Conditional Probability </h1>
+			P(A|B) = P(A &#8745 B) / P(B)
+			<br>
+			<i>If P(A) and P(B) are independent: P(A &#8745 B) = P(A)P(B)</i>
+			<form method = "POST" action = "stat.py">
+				P(A &#8745 B): <input type = "text" name = "condAB"> 
+				<br>
+				P(B): <input type = "text" name = "condB">
+				<br>
+				<input type = "submit" name = "cond" value = "Calculate">
+			</form>
+
 			<h1> Inclusion-Exclusion Principle </h1>
-			<P>
-				|A &#8746 B| = |A| + |B| - |A &#8745 B|	
-			</P>
+			|A &#8746 B| = |A| + |B| - |A &#8745 B|
+			<form method = "POST" action = "stat.py">
+				|A|: <input type = "text" name = "IncExA">
+				<br>
+				|B|: <input type = "text" name = "IncExB">
+				<br>
+				|A &#8745 B|: <input type = "text" name = "IncExAB" value = "calculate">
+				<br>
+				<input type = "submit" name = "IncEx" value = "Calculate">
+			</form>
+
 			<h1> Law of Total Probability </h1>
-			<P>
-			P(A) = &#8721<sub>i&#8712{1,...,n}</sub>P(A &#8745 B<sub>i</sub>) = &#8721<sub>i&#8712{1,...,n}</sub>P(A|B<sub>i</sub>)P(B<sub>i</sub>)  
-			</P>
+			P(A) = &#8721<sub>i&#8712{1,...,n}</sub>P(A &#8745 B<sub>i</sub>) = &#8721<sub>i&#8712{1,...,n}</sub>P(A|B<sub>i</sub>)P(B<sub>i</sub>)
+			<form method = "POST" action = "stat.py">
+				will come back to this one
+			</form>
+			<br>
+
 		</div>
+		<!separate calculation section using drop down menu - will come back to>
 		<div id = "Calc"> 
 			<form method = "POST" action = "stat.py">
 				<select name = "formula">
 					<option value = "Baye"> Bayes' Theorem </option> 
+					<option value = "cond"> Conditional Probability </option>
+					<option value = "IncEx"> Inclusion-Exclusion Principle </option>
 					<option value = "totalP"> Law of Total Probability </option>
 				</select> 
 			</form>
 		</div> 
 		<div id = "Footer"> 
-			<div> W </div>
-			<div> A </div>
-			<div> T </div>
+			<div> H </div>
 			<div> E </div>
-			<div> R </div>
+			<div> L </div>
+			<div> P </div>
+			<div> ! </div>
 		</div>
 	</body>
 </html>
