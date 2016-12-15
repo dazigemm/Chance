@@ -1,6 +1,7 @@
 html, body {
 	height: 100%;
 	margin: 0;
+	font-family: Arial, sans-serif;
 }
 
 #Nav {
@@ -39,6 +40,11 @@ html, body {
 #Formulas {
 	/*height: 100%; cuts off text?*/
 	border-top: 5px dashed teal;
+}
+
+p {
+	color: teal;
+	text-decoration:bold;
 }
 
 #Calc {/*Getting rid of this section for now*/
