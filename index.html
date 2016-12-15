@@ -26,7 +26,7 @@
 			<h1> Bayes' Theorem </h1>
 				Let A and B be events, where the probability of neither of the events are equal to zero.
 				Then P(A|B) = P(B|A)P(A)/P(B)
-			<form method = "POST" action = "javascript:completeAndRedirect()">
+			<form method = "POST" action = "javascript:Bayes()" id = "bayes">
 				Enter at least 2 of the following:
 				<br>
 				P(B|A): <input type = "text" name = "bayesPBA"> 
@@ -43,7 +43,7 @@
 			P(A|B) = P(A &#8745 B) / P(B)
 			<br>
 			<i>If P(A) and P(B) are independent: P(A &#8745 B) = P(A)P(B)</i>
-			<form method = "POST" action = "stat.py">
+			<form method = "POST" action="javascript:Cond()" id = "cond">
 				P(A &#8745 B): <input type = "text" name = "condAB"> 
 				<br>
 				P(B): <input type = "text" name = "condB">
@@ -54,7 +54,7 @@
 
 			<h1> Inclusion-Exclusion Principle </h1>
 			|A &#8746 B| = |A| + |B| - |A &#8745 B|
-			<form method = "POST" action = "stat.py">
+			<form method = "POST" action = "javascript:IncEx()" id = "IncEx">
 				|A|: <input type = "text" name = "IncExA">
 				<br>
 				|B|: <input type = "text" name = "IncExB">
@@ -67,15 +67,16 @@
 
 			<h1> Law of Total Probability </h1>
 			P(A) = &#8721<sub>i&#8712{1,...,n}</sub>P(A &#8745 B<sub>i</sub>) = &#8721<sub>i&#8712{1,...,n}</sub>P(A|B<sub>i</sub>)P(B<sub>i</sub>)
-			<form method = "POST" action = "stat.py">
+			<form method = "POST" action = "javascript:totalP()" id = "totalP">
 				will come back to this one
 			</form>
+			<p id = "totalPAns"></P>
 			<br>
 
 		</div>
 		<!separate calculation section using drop down menu - will come back to>
 		<div id = "Calc"> 
-			<form method = "POST" action = "stat.py">
+			<form method = "POST" action = "javascript:totalP()">
 				<select name = "formula">
 					<option value = "Baye"> Bayes' Theorem </option> 
 					<option value = "cond"> Conditional Probability </option>
