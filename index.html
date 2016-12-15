@@ -9,9 +9,18 @@
 			<a href = "#About">
 				<div class = "button"> About </div>
 			</a>
+			<a href = "#Formulas"> 
+				<div class = "button"> Formulas </div>
+			</a>
+			<a href = "#Calc">
+				<div class = "button"> Calculate </div>
+			</a>
 		</div>
-		<div id = "About"> 
+		<div id = "About">
 			<h1> About </h1>
+			Welcome!
+		</div>
+		<div id = "Formulas">
 			<h2> Bayes' Theorem </h2>
 			<P>
 				Let A and B be events. Then P(A|B) = P(B|A)P(A)/P(B)
@@ -21,8 +30,10 @@
 				P(A) = 
 			</P>
 		</div>
-		<div id = "Stat"> 
-			textboxes here?
+		<div id = "Calc"> 
+			<form method = "POST" action = "stat.py">
+				<input type = "text" name = "num">
+			</form>
 		</div> 
 		<div id = "Footer"> 
 			<div> W </div>

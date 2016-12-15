@@ -1,35 +1,49 @@
 html, body {
 	height: 100%;
 	margin: 0;
-	background-color: lightblue;
 }
 
 #Nav {
-	height: 100px;
+	height: 50px;
+	background-color: lightblue;
+	text-align: center;
 }
 
-a {
-	display: block;
+#Nav a {
+	display: inline-block;
+	text-decoration: none;
+	
 }
 
 .button {
 	height: 50px;
 	width: 100px;
-	margin: auto;
-	background-color: olive;
+		
+
+	background-color: gray;
+
 	text-align: center;
+	line-height: 50px;
+	color: white;	
+}
+
+.button:hover {
+	background-color: teal;
 }
 
 #About {
 	height: 100%;
-	background-color: white;
 	border-top: 5px solid black;
 }
 
-#Stat {
+#Formulas {
 	height: 100%;
 	border-top: 5px dashed teal;
-	background: white;
+}
+
+#Calc {
+	height: 100%;
+	border-top: 5px dashed gray;
 }
 
 #Footer {
@@ -37,7 +51,7 @@ a {
 	background-color: teal;
 	width: 100%;*/
 	/*display: flex;/* only works in certain browsers? */
-	font-size: 0;
+	font-size: 0;/*gets rid of gaps between divs*/
 	background: linear-gradient(teal 50%, lightblue);
 	height: 20%;
 }
