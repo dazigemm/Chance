@@ -3,4 +3,5 @@
 ##Possible Next Steps: 
 * boolean algebra calculator
 * greater number of inputs
-* keep formulas in separate text file to make it easier to import/sort?
+* keep formulas in separate text file then import/sort?
+* find better way to include math symbols, fractions...
