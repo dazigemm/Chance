@@ -8,3 +8,4 @@
 * change format (choose formulas using drop down menu)
 * option to show steps/logic in between
 * limit input to numbers
+* algebra?
