@@ -21,18 +21,25 @@
 			Welcome!
 		</div>
 		<div id = "Formulas">
-			<h2> Bayes' Theorem </h2>
+			<h1> Bayes' Theorem </h1>
 			<P>
 				Let A and B be events. Then P(A|B) = P(B|A)P(A)/P(B)
 			</P>
-			<h2> Law of Total Probability </h2>
+			<h1> Inclusion-Exclusion Principle </h1>
 			<P>
-				P(A) = 
+				|A &#8746 B| = |A| + |B| - |A &#8745 B|	
+			</P>
+			<h1> Law of Total Probability </h1>
+			<P>
+			P(A) = &#8721<sub>i&#8712{1,...,n}</sub>P(A &#8745 B<sub>i</sub>) = &#8721<sub>i&#8712{1,...,n}</sub>P(A|B<sub>i</sub>)P(B<sub>i</sub>)  
 			</P>
 		</div>
 		<div id = "Calc"> 
 			<form method = "POST" action = "stat.py">
-				<input type = "text" name = "num">
+				<select name = "formula">
+					<option value = "Baye"> Bayes' Theorem </option> 
+					<option value = "totalP"> Law of Total Probability </option>
+				</select> 
 			</form>
 		</div> 
 		<div id = "Footer"> 
