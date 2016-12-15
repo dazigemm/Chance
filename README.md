@@ -5,4 +5,5 @@
 * allow greater number and variety of inputs
 * keep formulas in separate text file then import/sort?
 * find better way to include math symbols, fractions...
-* choose formulas using drop down menu
+* change format (choose formulas using drop down menu)
+* option to show steps/logic in between
