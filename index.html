@@ -3,6 +3,7 @@
 	<head>
 		<title> Chance </title>
 		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<script type = "text/javascript" src = "scripts.js"></script>
 	</head> 
 	<body>
 		<div id = "Nav">	
@@ -12,9 +13,9 @@
 			<a href = "#Formulas"> 
 				<div class = "button"> Formulas </div>
 			</a>
-			<a href = "#Calc">
-				<div class = "button"> Calculate </div>
-			</a>
+			<!a href = "#Calc">
+				<!div class = "button"> <!Calculate </div>
+			<!/a>
 		</div>
 		<div id = "About">
 			<h1> About </h1>
@@ -25,7 +26,7 @@
 			<h1> Bayes' Theorem </h1>
 				Let A and B be events, where the probability of neither of the events are equal to zero.
 				Then P(A|B) = P(B|A)P(A)/P(B)
-			<form method = "POST" action = "stat.py">
+			<form method = "POST" action = "javascript:completeAndRedirect()">
 				Enter at least 2 of the following:
 				<br>
 				P(B|A): <input type = "text" name = "bayesPBA"> 
@@ -36,7 +37,8 @@
 				<br>
 				<input type = "submit" name = "bayes" value = "Calculate">
 			</form>
-
+			<p id = "bayesAns"></p>
+			
 			<h1> Conditional Probability </h1>
 			P(A|B) = P(A &#8745 B) / P(B)
 			<br>
@@ -48,6 +50,7 @@
 				<br>
 				<input type = "submit" name = "cond" value = "Calculate">
 			</form>
+			<p id = "condAns"></p>
 
 			<h1> Inclusion-Exclusion Principle </h1>
 			|A &#8746 B| = |A| + |B| - |A &#8745 B|
@@ -56,10 +59,11 @@
 				<br>
 				|B|: <input type = "text" name = "IncExB">
 				<br>
-				|A &#8745 B|: <input type = "text" name = "IncExAB" value = "calculate">
+				|A &#8745 B|: <input type = "text" name = "IncExAB">
 				<br>
 				<input type = "submit" name = "IncEx" value = "Calculate">
 			</form>
+			<p id = "IncExAns"></p>
 
 			<h1> Law of Total Probability </h1>
 			P(A) = &#8721<sub>i&#8712{1,...,n}</sub>P(A &#8745 B<sub>i</sub>) = &#8721<sub>i&#8712{1,...,n}</sub>P(A|B<sub>i</sub>)P(B<sub>i</sub>)
