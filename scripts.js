@@ -13,8 +13,8 @@ function Bayes() {
 function Cond() {
 	var toPrint = "";
 	var f = document.getElementById("cond");
-	var ab = f.element[0].value;
-	var b = f.element[1].value;
+	var ab = f.elements[0].value;
+	var b = f.elements[1].value;
 	toPrint += ab*b;
 	document.getElementById("condAns").innerHTML = toPrint;
 }
@@ -22,9 +22,9 @@ function Cond() {
 function IncEx () {
 	var toPrint = "";
 	var f = document.getElementById("IncEx");
-	var a = f.element[0].value;
-	var b = f.element[1].value;
-	var ab = f.lement[2].value;
+	var a = f.elements[0].value;
+	var b = f.elements[1].value;
+	var ab = f.elements[2].value;
 	toPrint += a + b - ab;
 	document.getElementById("IncExAns").innerHTML = toPrint;
 }
