@@ -22,9 +22,9 @@ function Cond() {
 function IncEx () {
 	var toPrint = "";
 	var f = document.getElementById("IncEx");
-	var a = f.elements[0].value;
-	var b = f.elements[1].value;
-	var ab = f.elements[2].value;
+	var a = parseInt(f.elements[0].value);
+	var b = parseInt(f.elements[1].value);
+	var ab = parseInt(f.elements[2].value);
 	toPrint += a + b - ab;
 	document.getElementById("IncExAns").innerHTML = toPrint;
 }
